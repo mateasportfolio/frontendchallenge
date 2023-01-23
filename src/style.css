@@ -7,7 +7,6 @@ body {
   place-content: center;
   place-items: center;
   padding: 20px;
-  border: "2px solid red";
 }
 
 .carousel-item {
@@ -66,7 +65,6 @@ body {
 html,
 body {
   height: 100%;
-  width: 100%;
   overflow: hidden;
   align-content: center;
   --bs-body-color: black;
@@ -137,7 +135,7 @@ body {
 .form-content label,
 .was-validated .form-check-input:invalid ~ .form-check-label,
 .was-validated .form-check-input:valid ~ .form-check-label {
-  color: #fff;
+  color: rgb(215, 68, 68);
 }
 
 .form-content input[type="text"],
@@ -153,7 +151,7 @@ body {
   background-color: #fff;
   font-size: 15px;
   font-weight: 300;
-  color: #8d8d8d;
+  color: #980707;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 16px;
