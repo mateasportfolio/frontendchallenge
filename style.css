@@ -210,3 +210,6 @@ body {
 :root {
   --bg-color: black;
 }
+:root {
+  scroll-behavior: smooth;
+}
