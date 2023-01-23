@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Knewave", sans-serif;
   width: 100%;
   margin: 0;
   display: flex;
@@ -24,13 +27,6 @@ body {
   opacity: 1;
   color: #160f15;
 }
-
-/* .bg-container {
-  box-sizing: border-box;
-  background-image: url("https://wallpapercave.com/wp/wp4198940.jpg");
-  background-repeat: repeat;
-  -webkit-text-fill-color: transparent;
-} */
 
 img:hover {
   outline: var(--s) solid var(--s);
