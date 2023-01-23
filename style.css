@@ -7,10 +7,11 @@ body {
   place-content: center;
   place-items: center;
   padding: 20px;
+  border: "2px solid red";
 }
 
 .carousel-item {
-  height: 300px;
+  height: 30px;
 }
 
 .item img {
@@ -52,7 +53,6 @@ img + img {
 /* Newletter Validation */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
-
 *,
 body {
   font-family: "Poppins", sans-serif;
@@ -60,31 +60,47 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+  --bs-body-color: rgb(149, 22, 22);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  align-content: center;
+  --bs-body-color: black;
 }
 
 .form-holder {
+  align-content: center;
+  border: 2px solid blue;
+  width: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  width: 120px;
 }
 
 .form-holder .form-content {
+  width: 50%;
   position: relative;
   text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
-  padding: 60px;
 }
 
 .form-content .form-items {
-  border: 3px solid rgb(71, 10, 79);
+  border: 3px solid rgb(132, 19, 109);
   padding: 40px;
   display: inline-block;
   width: 100%;
@@ -98,7 +114,7 @@ body {
 }
 
 .form-content h3 {
-  color: rgb(213, 221, 237);
+  color: #fff;
   text-align: left;
   font-size: 28px;
   font-weight: 600;
@@ -121,7 +137,7 @@ body {
 .form-content label,
 .was-validated .form-check-input:invalid ~ .form-check-label,
 .was-validated .form-check-input:valid ~ .form-check-label {
-  color: rgb(202, 72, 72);
+  color: #fff;
 }
 
 .form-content input[type="text"],
@@ -137,7 +153,7 @@ body {
   background-color: #fff;
   font-size: 15px;
   font-weight: 300;
-  color: #bf3279;
+  color: #8d8d8d;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 16px;
@@ -169,7 +185,7 @@ body {
   border: 0;
   font-size: 15px;
   font-weight: 300;
-  color: #510202;
+  color: #8d8d8d;
   outline: none;
   resize: none;
   height: 120px;
@@ -182,7 +198,7 @@ body {
 .form-content textarea:focus {
   border: 0;
   background-color: #ebeff8;
-  color: #e40606;
+  color: #8d8d8d;
 }
 
 .mv-up {
@@ -191,5 +207,13 @@ body {
 }
 
 .invalid-feedback {
-  color: #dd0719;
+  color: #ff606e;
+}
+
+.valid-feedback {
+  color: #2acc80;
+}
+
+:root {
+  --bg-color: black;
 }

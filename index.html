@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <style>
+     
       .geeks {
         width: 300px;
         height: 300px;
@@ -27,7 +28,7 @@
       }
     </style>
   </head>
-  <body>
+  <body">
     <nav class="navbar navbar-expand-lg bg-black text-info">
       <div class="container-fluid text-info">
         <a class="navbar-brand text-info fw-bolder" href="#">Eisbrecher</a>
@@ -62,189 +63,196 @@
       </div>
     </nav>
     <div class="bg-container bg-black m-sm-1 p-3">
-      <div class="row" id="img-slider">
-        <div
-          id="carouselExample"
-          class="carousel slide"
-          style="width: 100vh; height: 100vh; margin: 0 auto"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_LMM_Cover_3000x3000.jpg"
-                class="d-block w-100"
-                alt="a canyon"
-                style="--g: 20px; --b: 5px; --c: #b324b6"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_Single_FAKK_3000x3000.jpg"
-                class="d-block w-100"
-                alt="bild-2"
-                style="--g: 20px; --b: 5px; --c: #b324b6"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
+      <div class="row bg-black m-2 p-4 border border-primary">
+        <div class="row" id="img-slider">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            style="width: 100vh; height: 100vh; margin: 0 auto; padding: 30px"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="form-body">
-        <div class="row" id="newsletter">
-          <div class="form-holder">
-            <div class="form-content text-info">
-              <div class="form-items">
-                <h3>Register Today</h3>
-                <p>Fill in the data below.</p>
-                <form class="requires-validation" novalidate>
-                  <div class="col-md-12">
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="name"
-                      placeholder="Full Name"
-                      required
-                    />
-                    <div class="valid-feedback">Username field is valid!</div>
-                    <div class="invalid-feedback">
-                      Username field cannot be blank!
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <input
-                      class="form-control"
-                      type="email"
-                      name="email"
-                      placeholder="E-mail Address"
-                      required
-                    />
-                    <div class="valid-feedback">Email field is valid!</div>
-                    <div class="invalid-feedback">
-                      Email field cannot be blank!
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <select class="form-select mt-3" required>
-                      <option selected disabled value="">Position</option>
-                      <option value="jweb">Artist</option>
-                      <option value="sweb">Fans</option>
-                      <option value="pmanager">Human</option>
-                    </select>
-                    <div class="valid-feedback">You selected a position!</div>
-                    <div class="invalid-feedback">
-                      Please select a position!
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <input
-                      class="form-control"
-                      type="password"
-                      name="password"
-                      placeholder="Password"
-                      required
-                    />
-                    <div class="valid-feedback">Password field is valid!</div>
-                    <div class="invalid-feedback">
-                      Password field cannot be blank!
-                    </div>
-                  </div>
-                  <div class="col-md-12 mt-3">
-                    <label class="mb-3 mr-1" for="gender">Gender: </label>
-                    <input
-                      type="radio"
-                      class="btn-check"
-                      name="gender"
-                      id="male"
-                      autocomplete="off"
-                      required
-                    />
-                    <label class="btn btn-sm btn-outline-secondary" for="male"
-                      >Male</label
-                    >
-
-                    <input
-                      type="radio"
-                      class="btn-check"
-                      name="gender"
-                      id="female"
-                      autocomplete="off"
-                      required
-                    />
-                    <label class="btn btn-sm btn-outline-secondary" for="female"
-                      >Female</label
-                    >
-
-                    <input
-                      type="radio"
-                      class="btn-check"
-                      name="gender"
-                      id="secret"
-                      autocomplete="off"
-                      required
-                    />
-                    <label class="btn btn-sm btn-outline-secondary" for="secret"
-                      >Secret</label
-                    >
-                    <div class="valid-feedback mv-up">
-                      You selected a gender!
-                    </div>
-                    <div class="invalid-feedback mv-up">
-                      Please select a gender!
-                    </div>
-                  </div>
-
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="invalidCheck"
-                      required
-                    />
-                    <label class="form-check-label"
-                      >I confirm that all data are correct</label
-                    >
-                    <div class="invalid-feedback">
-                      Please confirm that the entered data are all correct!
-                    </div>
-                  </div>
-
-                  <div class="form-button mt-3">
-                    <button id="submit" type="submit" class="btn btn-primary">
-                      Register
-                    </button>
-                  </div>
-                </form>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_LMM_Cover_3000x3000.jpg"
+                  class="d-block w-100"
+                  alt="a canyon"
+                  style="--g: 20px; --b: 5px; --c: #b324b6"
+                />
               </div>
+              <div class="carousel-item">
+                <img
+                  src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_Single_FAKK_3000x3000.jpg"
+                  class="d-block w-100"
+                  alt="bild-2"
+                  style="--g: 20px; --b: 5px; --c: #b324b6"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="col m-4 p-3">
+          <div class="form-body">
+            <div class="row justify-content-end" id="newsletter">
+              <div class="form-holder" style="width: 50%">
+                <div class="form-content text-info m-sm-2" justify-content="center">
+                  <div class="form-items">
+                    <h3>Register Today</h3>
+                    <p>Fill in the data below.</p>
+                    <form class="requires-validation" novalidate>
+                      <div class="col-md-12">
+                        <input
+                          class="form-control"
+                          type="text"
+                          name="name"
+                          placeholder="Full Name"
+                          required
+                        />
+                        <div class="valid-feedback">Username field is valid!</div>
+                        <div class="invalid-feedback">
+                          Username field cannot be blank!
+                        </div>
+                      </div>
+    
+                      <div class="col-md-12">
+                        <input
+                          class="form-control"
+                          type="email"
+                          name="email"
+                          placeholder="E-mail Address"
+                          required
+                        />
+                        <div class="valid-feedback">Email field is valid!</div>
+                        <div class="invalid-feedback">
+                          Email field cannot be blank!
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <select class="form-select mt-3" required>
+                          <option selected disabled value="">Position</option>
+                          <option value="jweb">Artist</option>
+                          <option value="sweb">Fans</option>
+                          <option value="pmanager">Human</option>
+                        </select>
+                        <div class="valid-feedback">You selected a position!</div>
+                        <div class="invalid-feedback">
+                          Please select a position!
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <input
+                          class="form-control"
+                          type="password"
+                          name="password"
+                          placeholder="Password"
+                          required
+                        />
+                        <div class="valid-feedback">Password field is valid!</div>
+                        <div class="invalid-feedback">
+                          Password field cannot be blank!
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-3">
+                        <label class="mb-3 mr-1" for="gender">Gender: </label>
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="gender"
+                          id="male"
+                          autocomplete="off"
+                          required
+                        />
+                        <label class="btn btn-sm btn-outline-secondary" for="male"
+                          >Male</label
+                        >
+    
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="gender"
+                          id="female"
+                          autocomplete="off"
+                          required
+                        />
+                        <label class="btn btn-sm btn-outline-secondary" for="female"
+                          >Female</label
+                        >
+    
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="gender"
+                          id="secret"
+                          autocomplete="off"
+                          required
+                        />
+                        <label class="btn btn-sm btn-outline-secondary" for="secret"
+                          >Secret</label
+                        >
+                        <div class="valid-feedback mv-up">
+                          You selected a gender!
+                        </div>
+                        <div class="invalid-feedback mv-up">
+                          Please select a gender!
+                        </div>
+                      </div>
+    
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="invalidCheck"
+                          required
+                        />
+                        <label class="form-check-label"
+                          >I confirm that all data are correct</label
+                        >
+                        <div class="invalid-feedback">
+                          Please confirm that the entered data are all correct!
+                        </div>
+                      </div>
+    
+                      <div class="form-button mt-3">
+                        <button id="submit" type="submit" class="btn btn-primary">
+                          Register
+                        </button>
+                      </div>
+                    </form>
+                  </di>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="row bg-secondary p-4 m-2"
+        class="row bg-black p-4 m-2"
         id="band"
-        style="--bs-table-color: white"
+        style="--bs-table-color: rgb(213, 21, 21);"
       >
-        <div class="col">
-          <table class="table" style="--bs-table-color: white">
+        <div class="col border border-primary">
+          <table class="table" style="--bs-table-color: white;">
             <thead>
               <tr>
                 <th scope="col"></th>
@@ -286,7 +294,7 @@
             </tbody>
           </table>
         </div>
-        <div class="col">
+        <div class="col border border-primary">
           <div class="geeks">
             <img
               src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_Schicksalsmelodien-Simulation_Box.png"
@@ -294,7 +302,7 @@
             />
           </div>
         </div>
-        <div class="col p-2">
+        <div class="col p-2 border border-primary">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe
               class="embed-responsive-item"
