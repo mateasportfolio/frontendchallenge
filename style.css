@@ -10,7 +10,8 @@ body {
 }
 
 .carousel-item {
-  height: 30px;
+  height: 20vh;
+  width: 50vh;
 }
 
 .item img {
@@ -18,7 +19,7 @@ body {
   top: 0;
   left: 0;
   min-height: 3px;
-  height: 50%;
+  height: 20px;
 }
 
 .carousel-slide:hover .overlay {
