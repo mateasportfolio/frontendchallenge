@@ -28,7 +28,7 @@
       }
     </style>
   </head>
-  <body">
+  <body>
     <nav class="navbar navbar-expand-lg bg-black text-info" style="font-family: 'Orbitron', sans-serif;" >
       <div class="container-fluid text-info">
         <a class="navbar-brand text-info fw-bolder" href="#">Eisbrecher</a>
@@ -62,54 +62,47 @@
         </div>
       </div>
     </nav>
-    <div class="bg-container bg-black m-sm-1 p-3">
-      <div class="row bg-black m-2 p-4 border border-primary">
-        <div class="row" id="img-slider">
-          <div
-            id="carouselExample"
-            class="carousel slide"
-            style="width: 100vh; height: 100vh; margin: 0 auto; padding: 30px"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_LMM_Cover_3000x3000.jpg"
-                  class="d-block w-100"
-                  alt="a canyon"
-                  style="--g: 20px; --b: 5px; --c: #b324b6"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_Single_FAKK_3000x3000.jpg"
-                  class="d-block w-100"
-                  alt="bild-2"
-                  style="--g: 20px; --b: 5px; --c: #b324b6"
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <div class="bg-container bg-black">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_Single_FAKK_3000x3000.jpg" class="d-block w-100" alt="cover">
           </div>
-         <div class="col m-4 p-3">
+          <div class="carousel-item">
+            <img src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_LMM_Cover_3000x3000.jpg" class="d-block w-100" alt="bild">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row" id="img-slider">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_Single_FAKK_3000x3000.jpg" class="d-block w-100" alt="cover">
+            </div>
+            <div class="carousel-item">
+              <img src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_LMM_Cover_3000x3000.jpg" class="d-block w-100" alt="bild">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col m-4 p-3">
           <div class="form-body border">
-            <div class="row justify-content-center" id="newsletter">
+            <div class="justify-content-center" id="newsletter">
               <div class="form-holder" style="width: 50%">
                 <div class="form-content text-info m-sm-2" justify-content="center">
                   <div class="form-items">
@@ -193,13 +186,9 @@
                         </button>
                       </div>
                     </form>
+                  </div>
                 </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        </div>
+              </div>
             </div>
           </div>
         </div>
@@ -271,8 +260,6 @@
         </div>
       </div>
     </div>
-  <script src="script.js">
-  </script>
- 
+    <script src="src/script.js"></script>
   </body>
 </html>

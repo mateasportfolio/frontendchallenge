@@ -17,7 +17,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 300px;
+  min-height: 3px;
+  height: 50%;
 }
 
 .carousel-slide:hover .overlay {
@@ -45,7 +46,7 @@ img + img {
 /* Newletter Validation */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
-*,
+*/ *,
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
