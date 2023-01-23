@@ -17,7 +17,6 @@
         overflow: hidden;
         margin: 0 auto;
       }
-
       .geeks img {
         width: 100%;
         transition: 0.5s all ease-in-out;
@@ -29,9 +28,9 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Eisbrecher</a>
+    <nav class="navbar navbar-expand-lg bg-black text-info">
+      <div class="container-fluid text-info">
+        <a class="navbar-brand text-info fw-bolder" href="#">Eisbrecher</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,16 +44,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#img-slider">Image-Slider</a>
-            <a class="nav-link" href="#newsletter">Newsletter Subscription</a>
-            <a class="nav-link" href="#band">Band</a>
+            <a
+              class="nav-link active text-info"
+              aria-current="page"
+              href="#home"
+              >Home</a
+            >
+            <a class="nav-link text-info" href="#img-slider">Image Slider</a>
+            <a class="nav-link text-info" href="#newsletter"
+              >Newsletter Subscription</a
+            >
+            <a class="nav-link text-info" href="https://www.eis-brecher.com/"
+              >Band</a
+            >
           </div>
         </div>
       </div>
     </nav>
-
-    <div class="bg-container bg-black">
+    <div class="bg-container bg-black m-sm-1 p-3">
       <div class="row" id="img-slider">
         <div
           id="carouselExample"
@@ -99,25 +106,8 @@
           </button>
         </div>
       </div>
-      <!-- <div class="row home-newsletter text-light" id="newsletter">
-        <div class="col-sm-12">
-          <div class="single">
-            <h2>Subscribe to our Newsletter</h2>
-            <div class="input-group">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Enter your email"
-              />
-              <span class="input-group-btn">
-                <button class="btn btn-theme" type="submit">Subscribe</button>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="form-body">
-        <div class="row">
+        <div class="row" id="newsletter">
           <div class="form-holder">
             <div class="form-content text-info">
               <div class="form-items">
@@ -151,20 +141,18 @@
                       Email field cannot be blank!
                     </div>
                   </div>
-
                   <div class="col-md-12">
                     <select class="form-select mt-3" required>
                       <option selected disabled value="">Position</option>
-                      <option value="jweb">Junior Web Developer</option>
-                      <option value="sweb">Senior Web Developer</option>
-                      <option value="pmanager">Project Manager</option>
+                      <option value="jweb">Artist</option>
+                      <option value="sweb">Fans</option>
+                      <option value="pmanager">Human</option>
                     </select>
                     <div class="valid-feedback">You selected a position!</div>
                     <div class="invalid-feedback">
                       Please select a position!
                     </div>
                   </div>
-
                   <div class="col-md-12">
                     <input
                       class="form-control"
@@ -178,10 +166,8 @@
                       Password field cannot be blank!
                     </div>
                   </div>
-
                   <div class="col-md-12 mt-3">
                     <label class="mb-3 mr-1" for="gender">Gender: </label>
-
                     <input
                       type="radio"
                       class="btn-check"
@@ -252,7 +238,11 @@
           </div>
         </div>
       </div>
-      <div class="row" id="band">
+      <div
+        class="row bg-secondary p-4 m-2"
+        id="band"
+        style="--bs-table-color: white"
+      >
         <div class="col">
           <table class="table" style="--bs-table-color: white">
             <thead>
@@ -304,7 +294,7 @@
             />
           </div>
         </div>
-        <div class="col">
+        <div class="col p-2">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe
               class="embed-responsive-item"

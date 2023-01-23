@@ -62,13 +62,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html,
-body {
-  height: 100%;
-  background-color: #8f77cd;
-  overflow: hidden;
-}
-
 .form-holder {
   display: flex;
   flex-direction: column;
@@ -76,15 +69,12 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  width: 120px;
 }
 
 .form-holder .form-content {
   position: relative;
   text-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
@@ -201,5 +191,5 @@ body {
 }
 
 .invalid-feedback {
-  color: #ff606e;
+  color: #dd0719;
 }
