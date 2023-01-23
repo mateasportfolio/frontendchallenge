@@ -10,8 +10,7 @@ body {
 }
 
 .carousel-item {
-  height: 20vh;
-  width: 50vh;
+  height: 30px;
 }
 
 .item img {
@@ -19,7 +18,7 @@ body {
   top: 0;
   left: 0;
   min-height: 3px;
-  height: 20px;
+  height: 50%;
 }
 
 .carousel-slide:hover .overlay {
@@ -36,6 +35,23 @@ img + img {
   border-radius: 50%;
 }
 
+/* Image animation */
+
+.geeks {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.geeks img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+  transform: scale(1.5);
+}
+
 /* Start of Hover Animation Picture */
 
 .zoom:hover {
@@ -47,7 +63,7 @@ img + img {
 /* Newletter Validation */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
-*/ *,
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -209,7 +225,4 @@ body {
 
 :root {
   --bg-color: black;
-}
-:root {
-  scroll-behavior: smooth;
 }

@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Frontendchallenge</title>
+    <title>Frontend Challenge</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .geeks {
         width: 300px;
@@ -29,9 +32,12 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-black text-info shadow-lg" style="font-family: 'Orbitron', sans-serif;" >
+    <nav
+      class="navbar navbar-expand-lg bg-black text-info"
+      style="font-family: 'Orbitron', sans-serif"
+    >
       <div class="container-fluid text-info">
-        <a class="navbar-brand text-info fw-bolder shadow-lg" href="#">Eisbrecher</a>
+        <a class="navbar-brand text-info fw-bolder" href="#">Eisbrecher</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -46,125 +52,103 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a
-              class="nav-link active text-info text-uppercase"
+              class="nav-link active text-info"
               aria-current="page"
               href="#home"
               >Home</a
             >
-            <a class="nav-link text-info text-uppercase shadow-lg" href="#img-slider">Image Slider</a>
-            <a class="nav-link text-info text-uppercase" href="#newsletter"
+            <a class="nav-link text-info" href="#img-slider">Image Slider</a>
+            <a class="nav-link text-info" href="#newsletter"
               >Newsletter Subscription</a
             >
-            <a class="nav-link text-info text-uppercase" href="https://www.eis-brecher.com/"
-              >Band</a
+            <a class="nav-link text-info" href="#info">Informationen</a>
+            <a class="nav-link text-info" href="https://www.eis-brecher.com/"
+              >Band Webseite</a
             >
           </div>
         </div>
       </div>
     </nav>
     <div class="bg-container bg-black">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_Single_FAKK_3000x3000.jpg" class="d-block w-100" alt="cover">
-          </div>
-          <div class="carousel-item">
-            <img src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_LMM_Cover_3000x3000.jpg" class="d-block w-100" alt="bild">
+      <div class="row">
+        <div class="col">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_Single_FAKK_3000x3000.jpg"
+                  class="d-block w-100"
+                  alt="cover"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_LMM_Cover_3000x3000.jpg"
+                  class="d-block w-100"
+                  alt="bild"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="row" id="img-slider">
-        <div class="col m-4 p-3">
+        <div class="col m-5">
           <div class="form-body border">
             <div class="justify-content-center" id="newsletter">
-              <div class="form-holder" style="width: 50%">
-                <div class="form-content text-info m-sm-2" justify-content="center">
+              <div class="form-holder">
+                <div
+                  class="form-content text-info m-sm-2"
+                  justify-content="center"
+                >
                   <div class="form-items">
-                    <h3>Register Today</h3>
-                    <p>Fill in the data below.</p>
+                    <h3>Melde dich zu unserem Newsletter an!</h3>
+                    <p>Einfach ausfüllen und dabei sein.</p>
                     <form class="requires-validation" novalidate>
-                      <div class="col-md-12">
-                        <input
-                          class="form-control"
-                          autocomplete="address-level1"
-                          type="text"
-                          name="name"
-                          placeholder="Full Name"
-                          required
-                        />
-                        <div class="valid-feedback">Username field is valid!</div>
-                        <div class="invalid-feedback">
-                          Username field cannot be blank!
-                        </div>
-                      </div>
-    
                       <div class="col-md-12">
                         <input
                           class="form-control"
                           type="email"
                           name="email"
-                          placeholder="E-mail Address"
+                          placeholder="E-mail Addresse"
                           required
                         />
-                        <div class="valid-feedback">Email field is valid!</div>
+                        <div class="valid-feedback">
+                          Email ist ausgefüllt! Super :)
+                        </div>
                         <div class="invalid-feedback">
-                          Email field cannot be blank!
+                          Es muss eine Emailadresse angegeben sein.
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <select class="form-select mt-3" required>
-                          <option selected disabled value="">Position</option>
-                          <option value="jweb">Artist</option>
-                          <option value="sweb">Fans</option>
-                          <option value="pmanager">Human</option>
-                        </select>
-                        <div class="valid-feedback">You selected a position!</div>
-                        <div class="invalid-feedback">
-                          Please select a position!
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <input
-                          class="form-control"
-                          type="password"
-                          name="password"
-                          placeholder="Password"
-                          autocomplete="current-password"
-                          required
-                        />
-                        <div class="valid-feedback">Password field is valid!</div>
-                        <div class="invalid-feedback">
-                          Password field cannot be blank!
-                        </div>
-                      </div>
-                      <div class="col-md-12 mt-3">
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="invalidCheck"
-                          required
-                        /> 
-                        <label class="form-check-label"
-                          >I confirm that all data are correct</label
-                        >
-                        <div class="invalid-feedback">
-                          Please confirm that the entered data are all correct!
-                        </div>
-                      </div>
-    
                       <div class="form-button mt-3">
-                        <button id="submit" type="submit" class="btn btn-primary">
-                          Register
+                        <button
+                          id="submit"
+                          type="submit"
+                          class="btn btn-primary"
+                        >
+                          Anmelden
                         </button>
                       </div>
                     </form>
@@ -175,13 +159,9 @@
           </div>
         </div>
       </div>
-      <div
-        class="row bg-black p-4 m-2"
-        id="band"
-        style="--bs-table-color: rgb(213, 21, 21);"
-      >
-        <div class="col bg-gradient">
-          <table class="table" style="--bs-table-color: white;">
+      <div class="row" id="info">
+        <div class="col border border-primary">
+          <table class="table" style="--bs-table-color: white">
             <thead>
               <tr>
                 <th scope="col"></th>
@@ -223,16 +203,19 @@
             </tbody>
           </table>
         </div>
-        <div class="col bg-light">
+        <div class="col border border-primary box-shadow">
           <div class="geeks">
             <img
               src="https://lp2.sme-static.com/eisbrecher/dist/img/EB_Schicksalsmelodien-Simulation_Box.png"
               alt="band-bild"
+              class="img-fluid"
             />
           </div>
         </div>
-        <div class="col p-2 bg-gradient">
-          <div class="embed-responsive embed-responsive-16by9">
+        <div
+          class="col border border-primary bg-dark-subtle d-flex justify-content-center"
+        >
+          <div class="embed-responsive embed-responsive-16by9 m-auto">
             <iframe
               class="embed-responsive-item"
               src="https://www.youtube.com/embed/=aMso3mOTMXQ"
@@ -242,9 +225,11 @@
         </div>
       </div>
     </div>
-    <script src="src/script.js"></script> 
-    <script src="
-    https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
-    " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
